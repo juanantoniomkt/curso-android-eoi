@@ -7,26 +7,17 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-            int valor1 = 12;
-            double valor2 = 12.12;
-            String valor3 = "Juan Antonio";
-            float valor4 = 12.2f;
-            boolean valor5 = false;
-            byte valor6 = 1;
-            long valor7 = 234342334554354l;
-            short valor8 = 234;
-            char valor9 = 'A';
+            float cuenta1 = 2 + 5 - 3 *2;
+            float cuenta2 = 2 * 4 * 2 /2;
+            float cuenta3 = 1/2;
+            float cuenta4 = 5 *(1/2);
+            float cuenta5 = 5f * 1/2;
 
-
-            System.out.println("string: " + valor3);
-            System.out.println("int: " + valor1);
-            System.out.println("double: " + valor2);
-            System.out.println("float: " + valor4);
-            System.out.println("boolean: " + valor5);
-            System.out.println("byte: " + valor6);
-            System.out.println("long: " + valor7);
-            System.out.println("short: " + valor8);
-            System.out.println("char: " + valor9);
+            System.out.println("cuenta1: " + cuenta1);
+            System.out.println("cuenta2: " + cuenta2);
+            System.out.println("cuenta3: " + cuenta3);
+            System.out.println("cuenta4: " + cuenta4);
+            System.out.println("cuenta5: " + cuenta5);
 
     }
 
