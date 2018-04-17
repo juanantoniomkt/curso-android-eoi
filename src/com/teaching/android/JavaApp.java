@@ -9,19 +9,54 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        Scanner keyborad = new Scanner(System.in);
+        int cont = 0;
 
-        int valor = keyborad.nextInt();
+        int numeroAleatorio = (int) (Math.random()* 10 + 1);
 
+        boolean acertado = false;
+        String jugar = "no";
 
-        if(valor %2==0)
-        {
-            System.out.println("número es par");
-        }
-        else
-        {
-            System.out.println("número es impar");
-        }
+        do {
+
+            cont = cont + 1;
+
+            Scanner keyborad = new Scanner(System.in);
+
+            System.out.println("Escribe un número: ");
+            System.out.println("------------------------------------------------");
+            int valor = keyborad.nextInt();
+
+            if(valor > numeroAleatorio)
+            {
+                System.out.println("es aleatorio es menor!!");
+            }
+
+            else if(valor < numeroAleatorio)
+            {
+                System.out.println("es aleatorio es mayor!!");
+            }
+
+            else
+            {
+                acertado = true;
+                System.out.println("Bien!! Has acertado");
+            }
+
+            if(acertado == true || cont == 3)
+            {
+                cont = 0;
+                System.out.println("repetir el juego??");
+
+                jugar = keyborad.next();
+
+                if (jugar.equals("no"))
+                {
+                    break;
+                }
+            }
+
+        } while(jugar != "si");
+
 
     }
 
