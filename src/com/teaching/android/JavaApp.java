@@ -9,13 +9,13 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        int cont = 0;
+        int valor = 0;
 
-       for(int i = 0; i < 40; i = i+2)
+       for(int i = 1; i <= 20; i++)
        {
-           cont = cont + 1;
+           valor = valor + 2;
 
-           System.out.println(cont + " - num " + i);
+           System.out.println(i+" - "+valor);
        }
 
     }
