@@ -9,60 +9,14 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        int cont = 0;
 
-        int numeroAleatorio = (int) (Math.random()* 10 + 1);
+        Persona p1 = new Persona(500, "paco");
+        Persona p2 = new Persona(500, "pepe");
 
-        boolean acertado = false;
-        String jugar = "no";
+        p1.pagar(p2, 300);
 
-        do {
-
-            cont = cont + 1;
-
-            Scanner keyborad = new Scanner(System.in);
-
-            System.out.println("Escribe un número: ");
-            System.out.println("------------------------------------------------");
-            int valor = keyborad.nextInt();
-
-            if(valor > numeroAleatorio)
-            {
-                System.out.println("es aleatorio es menor!!");
-            }
-
-            else if(valor < numeroAleatorio)
-            {
-                System.out.println("es aleatorio es mayor!!");
-            }
-
-            else
-            {
-                acertado = true;
-                System.out.println("Bien!! Has acertado");
-            }
-
-            if(cont == 3)
-            {
-
-                if(acertado == false)
-                {
-                    System.out.println("has perdido...");
-                }
-
-                cont = 0;
-                System.out.println("repetir el juego??");
-
-                jugar = keyborad.next();
-
-                if (jugar.equals("no"))
-                {
-                    break;
-                }
-            }
-
-        } while(jugar != "si");
-
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
 
     }
 
