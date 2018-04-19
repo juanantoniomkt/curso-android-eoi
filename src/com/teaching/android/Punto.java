@@ -44,20 +44,12 @@ public class Punto {
 
         return total;
 
-        /*
-        double distancia =  (Math.pow(2, ((x * this.x) - x))) + (Math.pow(2, ((x * this.x) - x)));
-
-        double total = Math.sqrt(distancia);
-
-        System.out.println(total);
-        */
-
     }
 
     public double distancia(Punto p)
     {
-        int diferenciaX = p.x - this.x;
-        int diferenciaY = p.y - this.y;
+        int diferenciaX = p.x - x;
+        int diferenciaY = p.y - y;
 
         double diferenciaXElevado = Math.pow(diferenciaX, 2);
         double diferenciaYElevado = Math.pow(diferenciaY, 2);
