@@ -32,7 +32,9 @@ public class Punto {
     public static void distancia(int x, int y)
     {
 
-        double distancia = (Math.pow(x, 2) - x) + (Math.pow(y, 2) - y);
+
+
+        double distancia =  (Math.pow(2, ((x * x) - x))) + (Math.pow(2, ((x * x) - x)));
         double total = Math.sqrt(distancia);
 
         System.out.println(total);
@@ -40,7 +42,7 @@ public class Punto {
 
     public void distancia(Punto p)
     {
-        double distancia = (Math.pow(p.x, 2) - p.x) + (Math.pow(p.y, 2) - p.y);
+        double distancia =  (Math.pow(2, ((p.x * p.x) - p.x))) + (Math.pow(2, ((p.x * p.x) - p.x)));
         double total = Math.sqrt(distancia);
 
         System.out.println(total);
