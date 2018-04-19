@@ -48,17 +48,7 @@ public class Punto {
 
     public double distancia(Punto p)
     {
-        int diferenciaX = p.x - x;
-        int diferenciaY = p.y - y;
-
-        double diferenciaXElevado = Math.pow(diferenciaX, 2);
-        double diferenciaYElevado = Math.pow(diferenciaY, 2);
-
-        double suma = diferenciaX + diferenciaY;
-
-        double total = Math.sqrt(suma);
-
-        return total;
+        return distancia(p.x, p.y);
     }
 
     @Override
