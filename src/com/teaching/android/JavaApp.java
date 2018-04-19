@@ -10,6 +10,7 @@ public class JavaApp {
     public static void main(String[] args) {
 
 
+        /*
         Persona p1 = new Persona(500, "paco");
         Persona p2 = new Persona(500, "pepe");
 
@@ -17,6 +18,18 @@ public class JavaApp {
 
         System.out.println(p1.toString());
         System.out.println(p2.toString());
+
+        */
+
+        Punto p1 = new Punto (12, 12);
+
+        System.out.print("Distancia - ");
+        Punto.distancia(12, 12);
+
+        System.out.println("");
+
+        System.out.print("Distancia - ");
+        p1.distancia(p1);
 
     }
 
