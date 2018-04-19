@@ -29,23 +29,44 @@ public class Punto {
         this.y = y;
     }
 
-    public static void distancia(int x, int y)
+    public double distancia(int pX, int pY)
     {
 
+        int diferenciaX = pX - x;
+        int diferenciaY = pY -y;
 
+        double diferenciaXElevado = Math.pow(diferenciaX, 2);
+        double diferenciaYElevado = Math.pow(diferenciaY, 2);
 
-        double distancia =  (Math.pow(2, ((x * x) - x))) + (Math.pow(2, ((x * x) - x)));
+        double suma = diferenciaX + diferenciaY;
+
+        double total = Math.sqrt(suma);
+
+        return total;
+
+        /*
+        double distancia =  (Math.pow(2, ((x * this.x) - x))) + (Math.pow(2, ((x * this.x) - x)));
+
         double total = Math.sqrt(distancia);
 
         System.out.println(total);
+        */
+
     }
 
-    public void distancia(Punto p)
+    public double distancia(Punto p)
     {
-        double distancia =  (Math.pow(2, ((p.x * p.x) - p.x))) + (Math.pow(2, ((p.x * p.x) - p.x)));
-        double total = Math.sqrt(distancia);
+        int diferenciaX = p.x - this.x;
+        int diferenciaY = p.y - this.y;
 
-        System.out.println(total);
+        double diferenciaXElevado = Math.pow(diferenciaX, 2);
+        double diferenciaYElevado = Math.pow(diferenciaY, 2);
+
+        double suma = diferenciaX + diferenciaY;
+
+        double total = Math.sqrt(suma);
+
+        return total;
     }
 
     @Override

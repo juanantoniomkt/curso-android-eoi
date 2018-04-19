@@ -21,15 +21,16 @@ public class JavaApp {
 
         */
 
-        Punto p1 = new Punto (12, 12);
+        Punto p1 = new Punto (2, 4);
+        Punto p2 = new Punto (3, 5);
 
-        System.out.print("Distancia - ");
-        Punto.distancia(12, 12);
+        System.out.print("Distancia con  método 1 - ");
+        System.out.println(p1.distancia(3, 5));
 
         System.out.println("");
 
-        System.out.print("Distancia - ");
-        p1.distancia(p1);
+        System.out.print("Distancia con método 2 - ");
+        System.out.println(p1.distancia(p2));
 
     }
 
