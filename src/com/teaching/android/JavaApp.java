@@ -56,14 +56,34 @@ public class JavaApp {
         System.out.println("radio c2 " + c2.getRadio());
         */
 
-        int[][] matriz = {{3, 2, 1}, {1, 2, 3}, {2, 3, 1}};
+        int[] matrizDatos = {3, 2, 1, 1, 2, 3, 2, 3, 1};
 
-        for(int i = 0; i<matriz.length; i++)
+        int[][] matrizVacia = new int [3][3];
+
+        int cont = 0;
+
+
+        for(int i = 0; i<matrizVacia.length; i++)
         {
-            System.out.println(" ");
-            for(int j = 0; j<matriz[i].length; j++)
+
+            for(int j = 0; j<matrizVacia[i].length; j++)
             {
-                System.out.print(matriz[i][j] + " ");
+
+                matrizVacia[i][j] = matrizDatos[cont++];
+
+            }
+
+        }
+
+        //LEO MATRIZ VACÍA
+
+        for(int i = 0; i<matrizVacia.length; i++)
+        {
+            System.out.println("");
+
+            for(int j = 0; j<matrizVacia[i].length; j++)
+            {
+                System.out.print(matrizVacia[i][j] + " ");
             }
         }
 
