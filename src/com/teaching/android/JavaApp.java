@@ -21,8 +21,10 @@ public class JavaApp {
 
         */
 
+        /*
         Punto p1 = new Punto (2, 4);
         //Punto p2 = new Punto (3, 5);
+        */
 
         /*
 
@@ -41,6 +43,7 @@ public class JavaApp {
         */
 
 
+        /*
         Circulo c1 = new Circulo(p1, 10);
         Circulo c2 = new Circulo(2, 4, 10);
 
@@ -51,6 +54,18 @@ public class JavaApp {
 
         System.out.println("área c2 " + c2.getArea());
         System.out.println("radio c2 " + c2.getRadio());
+        */
+
+        int[][] matriz = {{3, 2, 1}, {1, 2, 3}, {2, 3, 1}};
+
+        for(int i = 0; i<matriz.length; i++)
+        {
+            System.out.println(" ");
+            for(int j = 0; j<matriz[i].length; j++)
+            {
+                System.out.print(matriz[i][j] + " ");
+            }
+        }
 
     }
 
